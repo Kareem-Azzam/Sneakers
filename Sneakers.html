@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="divall">
+        <div class="navbar">
+            <label class = "menu"><i class="fa fa-bars menu"></i></label>
+            <div class="logo">Sneakers</div>
+            <ul>
+                <li><a href = "#" style ="color :rgb(255, 72, 0)">Collections</a></li>
+                <li><a href = "#">Men</a></li>
+                <li><a href = "#">Women</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">Contact</a></li>
+            </ul>
+           <label></label><label></label>
+            <i class='fas fa-shopping-cart icon-shop'></i>
+            <img src="img/kareem_photo.jpg">
+        </div>
+
+        <div class="maindiv">
+            <div class="leftdiv">
+                <button class = "btn1" onclick="ChangeImagebefore2()"><i class='fas fa-angle-left'></i></button>
+                <img class = "imagedesktop" onclick="document.getElementById('allshowimage').style.display = 'block';" id = "MainImage3" src = "img/a.webp""> 
+                <img class = "imagemobile" src = "img/a.webp" id = "MainImage2"> 
+                    <button class = "btn2" onclick="ChangeImageNext2()"><i class='fas fa-angle-right'></i></button>
+                <div class="morephoto">
+                    <img src="img/a.webp" onclick="ChangeImage11()" class = "img1" id = "img11"/>
+                    <img src="img/b.webp" onclick="ChangeImage22()" class = "img2" id = "img22"/>
+                    <img src="img/c.webp" onclick="ChangeImage33()" class = "img3" id = "img33"/>
+                    <img src="img/d.png" onclick="ChangeImage44()" class = "img4" id = "img44"/>
+                </div>
+            </div>
+            <div class="rightdiv">
+                <label class = "label1">SNEAKER COMPANY</label>
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p>These Low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole. they well withstand everything the weather can offer.
+                </p>
+                <label class = "halfprice">50%</label>
+                <h3 class = "newprice">$125.00</h3>
+                <label class = "oldprice">$250.55</label>
+                <div class = "divbottom">
+                    <div class = "Quantity">
+                        <label style = "color: rgb(255, 72, 0);">-</label>
+                        <label>0</label>
+                        <label style = "color: rgb(255, 72, 0);">+</label>
+                    </div>
+                    <button type="submit"><i class='fas fa-shopping-cart'> Add to cart</i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="allshowimage" id = "allshowimage">
+
+            <button class = "btn3" onclick="this.parentNode.style.display = 'none'">X</button>
+                <div class = "showimage">
+                    <button class = "btn1" onclick="ChangeImagebefore()"><i class='fas fa-angle-left'></i></button>
+                    <img src = "img/a.webp" id = "MainImage">   
+                    <button class = "btn2" onclick="ChangeImageNext()"><i class='fas fa-angle-right'></i></button>
+                </div>
+                <div class="morephoto">
+                    <img src="img/a.webp" onclick="ChangeImage1()" class = "img1" id = "img1"/>
+                    <img src="img/b.webp" onclick="ChangeImage2()" class = "img2" id = "img2"/>
+                    <img src="img/c.webp" onclick="ChangeImage3()" class = "img3" id = "img3"/>
+                    <img src="img/d.png" onclick="ChangeImage4()" class = "img4" id = "img4"/>
+                </div>
+        </div>
+        
+
+    </div>
+
+    <script type = "text/javascript">
+        var MainImage = document.getElementById("MainImage");
+        var MainImage2 = document.getElementById("MainImage2");
+        var MainImage3 = document.getElementById("MainImage3");
+        var imageArray = ["img/a.webp","img/a.webp","img/b.webp","img/c.webp","img/d.png"];
+        var imageIndex = 1;
+        var imageIndex2 = 1;
+        var imageIndex3 = 1;
+
+        function ChangeImageNext()
+        {
+            imageIndex++;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            if(imageIndex > 4) {imageIndex = 4; MainImage.setAttribute("src", imageArray[imageIndex]);}
+            document.getElementById("img" + imageIndex).style.opacity = "0.5"
+            var a = imageIndex - 1 ;
+            document.getElementById("img" + a).style.backgroundImage = "url(" +imageArray[a] +")";
+
+        }
+        function ChangeImagebefore()
+        {
+            imageIndex--;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            if(imageIndex < 1) {imageIndex = 1; MainImage.setAttribute("src", imageArray[imageIndex]);}
+            document.getElementById("img" + imageIndex).style.opacity = "0.5"
+            var a = imageIndex + 1 ;
+            document.getElementById("img" + a).style.backgroundImage = "url(" +imageArray[a] +")";
+        }
+        function ChangeImage1()
+        {
+            imageIndex=1;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            document.getElementById("img1").style.opacity = "0.5";
+            document.getElementById("img2").style.opacity = "1";
+            document.getElementById("img3").style.opacity = "1";
+            document.getElementById("img4").style.opacity = "1";
+
+        }
+        function ChangeImage2()
+        {
+            imageIndex=2;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            document.getElementById("img2").style.opacity = "0.5";
+            document.getElementById("img1").style.opacity = "1";
+            document.getElementById("img3").style.opacity = "1";
+            document.getElementById("img4").style.opacity = "1";
+
+
+        }
+        function ChangeImage3()
+        {
+            imageIndex=3;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            document.getElementById("img3").style.opacity = "0.5";
+            document.getElementById("img2").style.opacity = "1";
+            document.getElementById("img1").style.opacity = "1";
+            document.getElementById("img4").style.opacity = "1";
+
+        }
+        function ChangeImage4()
+        {
+            imageIndex=4;
+            MainImage.setAttribute("src", imageArray[imageIndex]);
+            document.getElementById("img4").style.opacity = "0.5";
+            document.getElementById("img3").style.opacity = "1";
+            document.getElementById("img2").style.opacity = "1";
+            document.getElementById("img1").style.opacity = "1";
+
+        }
+
+        function ChangeImageNext2()
+        {
+            imageIndex2++;
+            MainImage2.setAttribute("src", imageArray[imageIndex2]);
+            if(imageIndex2 > 3) {imageIndex2 = 3; MainImage.setAttribute("src", imageArray[imageIndex]);}
+            document.getElementById("img" + imageIndex2).style.opacity = "0.5"
+            var a = imageIndex2 - 1 ;
+            document.getElementById("img" + a).style.backgroundImage = "url(" +imageArray[a] +")";
+
+        }
+        function ChangeImagebefore2()
+        {
+            imageIndex2--;
+            MainImage2.setAttribute("src", imageArray[imageIndex2]);
+            if(imageIndex2 < 1) {imageIndex2 = 1; MainImage2.setAttribute("src", imageArray[imageIndex2]);}
+            document.getElementById("img" + imageIndex2).style.opacity = "0.5"
+            var a = imageIndex2 + 1 ;
+            document.getElementById("img" + a).style.backgroundImage = "url(" +imageArray[a] +")";
+        }
+
+        
+
+        function ChangeImage11()
+        {
+            imageIndex3=1;
+            MainImage3.setAttribute("src", imageArray[imageIndex3]);
+            document.getElementById("img11").style.opacity = "0.5";
+            document.getElementById("img22").style.opacity = "1";
+            document.getElementById("img33").style.opacity = "1";
+            document.getElementById("img44").style.opacity = "1";
+
+        }
+        function ChangeImage22()
+        {
+            imageIndex3=2;
+            MainImage3.setAttribute("src", imageArray[imageIndex3]);
+            document.getElementById("img22").style.opacity = "0.5";
+            document.getElementById("img11").style.opacity = "1";
+            document.getElementById("img33").style.opacity = "1";
+            document.getElementById("img44").style.opacity = "1";
+
+
+        }
+        function ChangeImage33()
+        {
+            imageIndex3=3;
+            MainImage3.setAttribute("src", imageArray[imageIndex3]);
+            document.getElementById("img33").style.opacity = "0.5";
+            document.getElementById("img22").style.opacity = "1";
+            document.getElementById("img11").style.opacity = "1";
+            document.getElementById("img44").style.opacity = "1";
+
+        }
+        function ChangeImage44()
+        {
+            imageIndex3=4;
+            MainImage3.setAttribute("src", imageArray[imageIndex3]);
+            document.getElementById("img44").style.opacity = "0.5";
+            document.getElementById("img33").style.opacity = "1";
+            document.getElementById("img22").style.opacity = "1";
+            document.getElementById("img11").style.opacity = "1";
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/5d2ad38953.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

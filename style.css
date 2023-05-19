@@ -1,0 +1,624 @@
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .divall{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+           width: 90%;
+           height: 95vh;
+           box-shadow: 1px 2px 8px 4px rgb(173, 173, 173);
+        }
+
+
+        .divall .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            height: 100px;
+            margin : 0 4%;
+            border-bottom: 0.1px solid rgb(202, 200, 200);
+        }
+        .divall .navbar .logo{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .divall .navbar ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        .divall .navbar ul li{
+            padding : 5%;
+        }
+        .divall .navbar ul li a{
+            text-decoration: none;
+            color : rgb(134, 134, 134);
+            font-size: 1.1rem;
+        }
+        .divall .navbar ul li a:hover{
+            text-decoration: none;
+            color : rgb(255, 72, 0);
+            font-size: 1.1rem;
+        }
+        .divall .navbar .icon-shop{
+            font-size: 1.1rem; 
+            color : rgb(134, 134, 134);
+ 
+        }
+        .divall .navbar img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; 
+        }
+
+
+
+
+        .maindiv{
+            margin: 3% 4%;
+            display: flex;
+            width: 90%;
+        }
+
+        .maindiv .leftdiv{
+            width: 30%;
+            height: 450px;
+        }
+        .maindiv .leftdiv .imagedesktop{
+            width: 100%;
+            height: 350px;
+            border-radius: 4%;
+            object-fit: cover;
+        }
+        .maindiv .leftdiv .imagemobile{
+            display: none;
+        }
+        .maindiv .leftdiv .morephoto{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-top: 5%;
+        }
+        .maindiv .leftdiv .morephoto img{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+        .maindiv .leftdiv .morephoto .img1{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./aa.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('./aa.webp');
+        }
+        .maindiv .leftdiv .morephoto .img2{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./bb.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+        .maindiv .leftdiv .morephoto .img3{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./cc.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+        .maindiv .leftdiv .morephoto .img4{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./dd.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+        
+
+
+
+        .maindiv .rightdiv{
+            width: 40%;
+            margin-left: 10%;
+            margin-top: 1%;
+        }
+        .maindiv .rightdiv .label1{
+            font-size: 0.6rem;
+            color: rgb(248, 73, 4);
+            font-weight: 700;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+        .maindiv .rightdiv h2{
+            margin: 1% 0 0 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .maindiv .rightdiv p{
+            font-size: 0.9rem;
+            line-height: 20px;
+            color : rgb(158, 157, 157);
+            margin-top: 4% 0 0 0;
+            font-weight: 600;
+        }
+        .maindiv .rightdiv .newprice{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 1.2% 0;
+        }
+        .maindiv .rightdiv .halfprice
+        {
+            position: relative;
+            top: 6%;
+            left:25%;
+            padding : 2px 5px;
+            border-radius: 5px;
+            font-weight: 700;
+            background-color: rgb(238, 238, 237);
+            color: rgb(255, 72, 0);
+        }
+        .maindiv .rightdiv .oldprice
+        {   
+            font-size: 0.9rem;
+            color : rgb(158, 157, 157);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+
+        .maindiv .rightdiv .divbottom
+        { 
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-top: 5%;
+        }
+        .maindiv .rightdiv .divbottom button
+        { 
+            width: 50%;
+            height: 45px;
+            font-size: 1rem;
+           font-weight: 600;
+           border-radius: 5px;
+           border-style: none;
+           background-color: rgb(255, 72, 0);
+           color: white
+        }
+        .maindiv .rightdiv .divbottom button:hover
+        { 
+            width: 50%;
+            height: 45px;
+            font-size: 0.9rem;
+           font-weight: 600;
+           border-radius: 5px;
+           border-style: none;
+           background-color: rgb(241, 104, 50);
+           color: white
+        }
+        .maindiv .rightdiv .Quantity
+        {   
+           width : auto;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           background-color: rgb(235, 234, 233);
+           border-radius: 5px;
+           padding: 1%;
+
+        }
+        .maindiv .rightdiv .Quantity label
+        {   
+            text-align: center;
+            padding: 0px 22px;
+           font-size: 1.5rem;
+           font-weight: 600;
+        }
+
+
+
+
+        .allshowimage
+        {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 95vh;
+            background-color:rgba(0, 0, 0, 0.8);
+        }
+        .showimage{ 
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .showimage img{
+            width: 500px;
+            height: 450px;
+            border-radius: 4%;
+            object-fit: cover;
+        }
+
+        .showimage .btn1{
+            width: 40px;
+            height: 40px;
+            font-size: 2.2rem;
+            text-align: center;
+            border-radius: 50%;
+            border-style: none;
+            position: relative;
+            left : 1.8%;
+            top: 0;
+            background-color: rgb(221, 221, 221);
+        }
+        .showimage .btn2{
+            width: 40px;
+            height: 40px;
+            font-size: 2.2rem;
+            text-align: center;
+            border-radius: 50%;
+            border-style: none;
+            position: relative;
+            right : 1.8%;
+            top: 0;
+            background-color: rgb(221, 221, 221);
+        }
+        .allshowimage .btn3{
+            width: 20px;
+            height: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+            border-style: none;
+            position: absolute;
+            background-color:rgba(43, 48, 48, 0.8);
+            right : 6%;
+            top: 7%;
+            color:white;
+        }
+        .allshowimage .morephoto{
+            width: 30%;
+            position: absolute;
+            left: 50%;
+            top: 90%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .allshowimage .morephoto .img1{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./aa.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('./aa.webp');
+        }
+        .allshowimage .morephoto .img2{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./bb.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+        .allshowimage .morephoto .img3{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./cc.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+         .allshowimage .morephoto .img4{
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            object-fit: cover;
+            background-image: url("./dd.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*filter: brightness(50%);*/
+            /*background-image: 
+            linear-gradient(rgba(252, 250, 250, 0.5), rgba(253, 253, 253, 0.5)),
+            url('../aa.webp');*/
+        }
+
+        .menu{
+            display: none;
+        }
+
+        .leftdiv button{
+            display: none;
+        }
+
+
+
+
+        /*Mobile*/
+        @media only screen and (max-width: 900px) {
+
+            body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .divall{
+            position: absolute;
+                left: 0%;
+                top : 0%;
+                transform: translate(0%,0%);
+                width: 100%;
+                height: auto;
+                padding : 0 2%;
+                 box-shadow: 1px 2px 8px 4px rgb(173, 173, 173);
+        }
+
+
+        .divall .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            height: 80px;
+            margin : 0 4%;
+            border-bottom: none;
+        }
+        .divall .navbar .logo{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .menu{
+            display: block;
+            font-size: 25px;
+        }
+
+        .divall .navbar ul{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        .divall .navbar ul li{
+            padding : 5%;
+        }
+        .divall .navbar ul li a{
+            text-decoration: none;
+            color : rgb(134, 134, 134);
+            font-size: 1.1rem;
+        }
+        .divall .navbar ul li a:hover{
+            text-decoration: none;
+            color : rgb(255, 72, 0);
+            font-size: 1.1rem;
+        }
+        .divall .navbar .icon-shop{
+            font-size: 1.1rem; 
+            color : rgb(134, 134, 134);
+ 
+        }
+        .divall .navbar img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%; 
+        }
+        
+
+
+
+
+        .maindiv{
+            margin: 0;
+            display: block;
+            width: 100%;
+        }
+
+        .maindiv .leftdiv{
+            width: 100%;
+            height: 450px;
+        }
+        
+        .maindiv .leftdiv .imagedesktop{
+         display: none;
+        }
+        .maindiv .leftdiv .imagemobile{
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .leftdiv .btn1{
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 2.2rem;
+            text-align: center;
+            border-radius: 50%;
+            border-style: none;
+            position: relative;
+            left : 5%;
+            top: 40%;
+            background-color: rgb(221, 221, 221);
+        }
+        .leftdiv .btn2{
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 2.2rem;
+            text-align: center;
+            border-radius: 50%;
+            border-style: none;
+            position: relative;
+            left : 85%;
+            bottom: 47.5%;
+            background-color: rgb(221, 221, 221);
+        }
+        .maindiv .leftdiv .morephoto{
+            display: none;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-top: 5%;
+        }
+
+
+
+        
+        .maindiv .rightdiv{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 1%;
+        }
+        .maindiv .rightdiv .label1{
+            font-size: 0.6rem;
+            color: rgb(248, 73, 4);
+            font-weight: 700;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+        .maindiv .rightdiv h2{
+            margin: 1% 0 0 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .maindiv .rightdiv p{
+            font-size: 0.9rem;
+            line-height: 25px;
+            color : rgb(158, 157, 157);
+            margin-top: 4% 0 0 0;
+            font-weight: 600;
+        }
+        .maindiv .rightdiv .newprice{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 1.2% 0;
+        }
+        .maindiv .rightdiv .halfprice
+        {
+            position: static;
+            margin-left: 35%;
+            padding : 2px 5px;
+            border-radius: 5px;
+            font-weight: 700;
+            background-color: rgb(238, 238, 237);
+            color: rgb(255, 72, 0);
+        }
+        .maindiv .rightdiv .oldprice
+        {   
+            font-size: 0.9rem;
+            color : rgb(158, 157, 157);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+
+        .maindiv .rightdiv .divbottom
+        { 
+           display: block;
+           justify-content: space-between;
+           align-items: center;
+           margin-top: 10%;
+           width: 100%;
+           height: 200px;
+        }
+        .maindiv .rightdiv .divbottom button
+        { 
+            margin-top: 10%;
+            width: 100%;
+            height: 50px;
+            font-size: 1rem;
+           font-weight: 600;
+           border-radius: 5px;
+           border-style: none;
+           background-color: rgb(255, 72, 0);
+           color: white
+        }
+        .maindiv .rightdiv .divbottom button:hover
+        { 
+            width: 100%;
+            height: 50px;
+            font-size: 0.9rem;
+           font-weight: 600;
+           border-radius: 5px;
+           border-style: none;
+           background-color: rgb(241, 104, 50);
+           color: white
+        }
+        .maindiv .rightdiv .Quantity
+        {   
+           width : 90%;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: rgb(235, 234, 233);
+           border-radius: 5px;
+           margin-left: 4%;
+
+        }
+        .maindiv .rightdiv .Quantity label
+        {   
+           text-align: center;
+           padding: 0px 22px;
+           font-size: 1.5rem;
+           font-weight: 600;
+        }
+
+
+
+        }
+        
